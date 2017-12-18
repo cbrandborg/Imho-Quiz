@@ -1,6 +1,9 @@
 $(document).ready(() => {
 
-    $("#login-button").click(() => {
+    const createButton = $('#create-button');
+    const loginButton = $("#login-button");
+
+    loginButton.click(() => {
 
     let loginUser = {
         username: $("#loginUsername").val(),
@@ -32,7 +35,7 @@ $.ajax({
 
 });
 
-$("#create-button").click(() => {
+    createButton.click(() => {
 
     let createdUser = {
         username: $("#createUsername").val(),
@@ -65,6 +68,7 @@ function getProfile() {
         method: "GET",
         headers: {authorization: localStorage.getItem("token")},
         success: function callback(currentUser) {
+
             localStorage.setItem("user", currentUser);
         },
         error: function (err) {
