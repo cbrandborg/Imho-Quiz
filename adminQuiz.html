@@ -10,7 +10,6 @@
 
 </head>
 <body>
-
 <div class="container">
 
     <div class="row" id="nav-container"></div>
@@ -18,10 +17,21 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="jumbotron">
-                <h2 class="display-3" id="subject-name"></h2>
                 <p class="lead">
-                <div class="main" id="quiz-buttons">
-                </div>
+                <h2 id="h2"></h2>
+                    <div>
+                        <div>
+                            <button class="btn-group btn-block" id="new-quiz" type="button">Opret quiz</button>
+                        </div>
+                        <form id="course-form">
+                            <label>Her ses en liste af quizzerne - Markér dem, der ønskes slettet og klik på knappen nedenfor.</label>
+
+                        </form>
+                        <div>
+                            <br>
+                            <button class="btn-group btn-block" id="delete-quiz-btn" type="button">Slet valgte quizzer</button>
+                        </div>
+                    </div>
                 </p>
             </div>
 
@@ -37,7 +47,7 @@
 
 <script src="lib/js/jquery-3.2.1.js"></script>
 <script src="lib/js/bootstrap.js"></script>
-<script src="js/quiz.js"></script>
+<script src="js/adminQuiz.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/crypter.js"></script>
 
